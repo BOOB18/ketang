@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>珠峰课堂</title>
+</head>
+<script>
+    function fn(desW) {
+        let winW = document.documentElement.clientWidth;
+        if(winW>=750){
+            document.documentElement.style.fontSize = "100px";
+            return
+        }
+        document.documentElement.style.fontSize = winW/750*100+"px"
+    }
+    fn();
+    window.addEventListener("resize",fn,false)
+</script>
+<body>
+
+<div id="root"></div>
+
+</body>
+</html>
